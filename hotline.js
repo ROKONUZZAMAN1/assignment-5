@@ -40,16 +40,280 @@ increase('heartToClick9')
 let copy = parseInt(document.getElementById('copycount').innerText)
 console.log(copy)
 const copyvalue = document.getElementById('copycount')
-function increase2(value1) {
 
-    document.getElementById(value1).addEventListener('click', function () {
-        // console.log('click is working');
-        copy++
-        console.log(copy);
-        copyvalue.innerText = copy
-    })
-    return value1
-}
+
+
+
+
+document.getElementById('copyToClick').addEventListener('click', function () {
+    // console.log('click is working');
+    copy++
+    console.log(copy);
+    copyvalue.innerText = copy
+
+
+    const cpynumber = document.getElementById('callnum').innerText
+    // console.log(cpynumber);
+    const copyDone = navigator.clipboard.writeText(cpynumber)
+    // console.log(copyDone);
+    alert('Copied: ' + cpynumber)
+
+    //
+
+
+
+
+})
+document.getElementById('copyToClick2').addEventListener('click', function () {
+    // console.log('click is working');
+    copy++
+    console.log(copy);
+    copyvalue.innerText = copy
+
+
+    const cpynumber2 = document.getElementById('callnum2').innerText
+    // console.log(cpynumber);
+    const copyDone2 = navigator.clipboard.writeText(cpynumber2)
+    // console.log(copyDone);
+    alert('Copied: ' + cpynumber2)
+
+
+
+})
+document.getElementById('copyToClick3').addEventListener('click', function () {
+    // console.log('click is working');
+    copy++
+    console.log(copy);
+    copyvalue.innerText = copy
+
+
+    const cpynumber3 = document.getElementById('callnum3').innerText
+    // console.log(cpynumber);
+    const copyDone3 = navigator.clipboard.writeText(cpynumber3)
+    // console.log(copyDone);
+    alert('Copied: ' + cpynumber3)
+
+
+
+})
+
+document.getElementById('copyToClick4').addEventListener('click', function () {
+    // console.log('click is working');
+    copy++
+    console.log(copy);
+    copyvalue.innerText = copy
+
+
+    const cpynumber4 = document.getElementById('callnum4').innerText
+    // console.log(cpynumber);
+    const copyDone4 = navigator.clipboard.writeText(cpynumber4)
+    // console.log(copyDone);
+    alert('Copied: ' + cpynumber4)
+
+    //
+
+
+
+
+})
+document.getElementById('copyToClick5').addEventListener('click', function () {
+    // console.log('click is working');
+    copy++
+    console.log(copy);
+    copyvalue.innerText = copy
+
+
+    const cpynumber5 = document.getElementById('callnum5').innerText
+    // console.log(cpynumber);
+    const copyDone5 = navigator.clipboard.writeText(cpynumber5)
+    // console.log(copyDone);
+    alert('Copied: ' + cpynumber5)
+
+    //
+
+
+
+
+})
+document.getElementById('copyToClick6').addEventListener('click', function () {
+    // console.log('click is working');
+    copy++
+    console.log(copy);
+    copyvalue.innerText = copy
+
+
+    const cpynumber6 = document.getElementById('callnum6').innerText
+    // console.log(cpynumber);
+    const copyDone6 = navigator.clipboard.writeText(cpynumber6)
+    // console.log(copyDone);
+    alert('Copied: ' + cpynumber6)
+
+    //
+
+
+
+})
+document.getElementById('copyToClick7').addEventListener('click', function () {
+    // console.log('click is working');
+    copy++
+    console.log(copy);
+    copyvalue.innerText = copy
+
+
+    const cpynumber7 = document.getElementById('callnum7').innerText
+    // console.log(cpynumber);
+    const copyDone7 = navigator.clipboard.writeText(cpynumber7)
+    // console.log(copyDone);
+    alert('Copied: ' + cpynumber7)
+
+    //7
+
+
+})
+document.getElementById('copyToClick8').addEventListener('click', function () {
+    // console.log('click is working');
+    copy++
+    console.log(copy);
+    copyvalue.innerText = copy
+
+
+    const cpynumber8 = document.getElementById('callnum8').innerText
+    // console.log(cpynumber);
+    const copyDone8 = navigator.clipboard.writeText(cpynumber8)
+    // console.log(copyDone);
+    alert('Copied: ' + cpynumber8)
+
+    //7
+
+
+})
+
+document.getElementById('copyToClick9').addEventListener('click', function () {
+    // console.log('click is working');
+    copy++
+    console.log(copy);
+    copyvalue.innerText = copy
+
+
+    const cpynumber9 = document.getElementById('callnum9').innerText
+    // console.log(cpynumber);
+    const copyDone9 = navigator.clipboard.writeText(cpynumber9)
+    // console.log(copyDone);
+    alert('Copied: ' + cpynumber9)
+
+    //7
+
+
+})
+
+// function increase2(value1) {
+
+//     document.getElementById(value1).addEventListener('click', function () {
+//         // console.log('click is working');
+//         copy++
+//         console.log(copy);
+//         copyvalue.innerText = copy
+
+
+//         const cpynumber = document.getElementById('callnum').innerText
+//         // console.log(cpynumber);
+//         const copyDone = navigator.clipboard.writeText(cpynumber)
+//         // console.log(copyDone);
+//         alert('Copied: ' + cpynumber)
+
+//         //
+
+
+
+
+//     })
+
+
+
+
+//     return value1
+
+
+
+
+//     //*** */ copy to clipboard 
+
+
+
+// const cpynumber2 = document.getElementById('callnum2').innerText
+// // console.log(cpynumber);
+// const copyDone2 = navigator.clipboard.writeText(cpynumber2)
+// // console.log(copyDone);
+// alert('Copied: ' + cpynumber2)
+
+//     //
+//     const cpynumber3 = document.getElementById('callnum3').innerText
+//     // console.log(cpynumber);
+//     const copyDone3 = navigator.clipboard.writeText(cpynumber3)
+//     // console.log(copyDone);
+//     alert('Copied: ' + cpynumber3)
+
+//     //
+//     const cpynumber4 = document.getElementById('callnum4').innerText
+//     // console.log(cpynumber);
+//     const copyDone4 = navigator.clipboard.writeText(cpynumber4)
+//     // console.log(copyDone);
+//     alert('Copied: ' + cpynumber4)
+
+//     //
+//     const cpynumber5 = document.getElementById('callnum5').innerText
+//     // console.log(cpynumber);
+//     const copyDone5 = navigator.clipboard.writeText(cpynumber5)
+//     // console.log(copyDone);
+//     alert('Copied: ' + cpynumber5)
+
+//     //
+//     const cpynumber6 = document.getElementById('callnum6').innerText
+//     // console.log(cpynumber);
+//     const copyDone6 = navigator.clipboard.writeText(cpynumber6)
+//     // console.log(copyDone);
+//     alert('Copied: ' + cpynumber6)
+
+//     //
+//     const cpynumber7 = document.getElementById('callnum7').innerText
+//     // console.log(cpynumber);
+//     const copyDone7 = navigator.clipboard.writeText(cpynumber7)
+//     // console.log(copyDone);
+//     alert('Copied: ' + cpynumber7)
+
+//     //
+//     const cpynumber8 = document.getElementById('callnum8').innerText
+//     // console.log(cpynumber);
+//     const copyDone8 = navigator.clipboard.writeText(cpynumber8)
+//     // console.log(copyDone);
+//     alert('Copied: ' + cpynumber8)
+
+//     //
+//     const cpynumber9 = document.getElementById('callnum9').innerText
+//     // console.log(cpynumber);
+//     const copyDone9 = navigator.clipboard.writeText(cpynumber9)
+//     // console.log(copyDone);
+//     alert('Copied: ' + cpynumber9)
+
+//     //
+
+
+
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 increase2('copyToClick')
 increase2('copyToClick2')
 increase2('copyToClick3')
@@ -60,7 +324,7 @@ increase2('copyToClick7')
 increase2('copyToClick8')
 increase2('copyToClick9')
 
-
+// copy a number part
 
 
 
@@ -314,6 +578,7 @@ showName('callname6')
 showName('callname7')
 showName('callname8')
 showName('callname9')
+
 
 
 showNumber('callnum')
