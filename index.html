@@ -61,12 +61,12 @@
         <div>
             <div class="gap-3 flex">
                 <div class="flex items-center      font-bold  w-[123px] h-[52px] bg-[#41ff751a] rounded-full ">
-                    <span class="mx-auto flex items-center gap-2">0<img src="./logo/heart.png" alt=""
-                            class="h-[21px] w-[21px] ">
+                    <span class="mx-auto flex items-center gap-2"><span id="heartCount">0</span><img
+                            src="./logo/heart.png" alt="" class="h-[21px] w-[21px] ">
                     </span>
                 </div>
                 <div class="flex items-center      font-bold   w-[123px] h-[52px] bg-[#41ff751a] rounded-full ">
-                    <span class="mx-auto flex gap-2">100 <img src="./logo/coin.png" alt="My Logo"
+                    <span class="mx-auto flex gap-2"><span id="coin">100</span> <img src="./logo/coin.png" alt="My Logo"
                             class="w-[24px] h[24px] ">
                     </span>
 
@@ -114,18 +114,18 @@
                 <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex justify-center items-center   ">
                     <img class="mx-auto items-center  h-[32px] w-[32px]" src="./logo/emergency.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart text-gray-700"></i>
+                <i id="heartToClick" class="fa-regular fa-heart text-gray-700  hover:text-red-700 "></i>
             </div>
-            <h1 class="font-bold text-[24px]">National Emergency Number</h1>
+            <h1 id="callname" class="font-bold text-[24px]   ">National Emergency Number</h1>
             <p class=" text-[18px] text-gray-700">National Emergency</p>
 
 
-            <h1 class="font-bold text-[32px] mt-3">999</h1>
+            <h1 id="callnum" class="font-bold text-[32px] mt-3">999</h1>
             <p class="bg-[#f2f2f2] rounded-full max-w-fit px-4 mb-5 py-1">All</p>
             <div class="flex gap-3">
                 <button class="roboto text-gray-500 rounded-lg min-h-[40px] w-full  border 2 border-gray-400 gap-3"><i
                         class="fa-regular fa-copy gap-3"></i> Copy</button>
-                <button class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
+                <button id="call-btn" class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
                         class="fa-solid fa-phone"></i>
                     Call</button>
             </div>
@@ -142,18 +142,18 @@
                 <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex justify-center items-center   ">
                     <img class="mx-auto items-center  h-[32px] w-[32px]" src="./logo/police.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart text-gray-700"></i>
+                <i id="heartToClick2" class="fa-regular fa-heart text-gray-700  hover:text-red-700"></i>
             </div>
-            <h1 class="font-bold text-[24px]">Police Helpline Number</h1>
+            <h1 id="callname2" class="font-bold text-[24px]">Police Helpline Number</h1>
             <p class=" text-[18px] text-gray-700">Police</p>
 
 
-            <h1 class="font-bold text-[32px] mt-3">999</h1>
+            <h1 id="callnum2" class="font-bold text-[32px] mt-3">999</h1>
             <p class="bg-[#f2f2f2] rounded-full max-w-fit px-4 mb-5 py-1">Police</p>
             <div class="flex gap-3">
                 <button class="roboto text-gray-500 rounded-lg min-h-[40px] w-full  border 2 border-gray-400 gap-3"><i
                         class="fa-regular fa-copy gap-3"></i> Copy</button>
-                <button class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
+                <button id="call-btn2" class=" roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
                         class="fa-solid fa-phone"></i>
                     Call</button>
             </div>
@@ -170,18 +170,18 @@
                 <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex justify-center items-center   ">
                     <img class="mx-auto items-center  h-[32px] w-[32px]" src="./logo/emergency.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart text-gray-700"></i>
+                <i id="heartToClick3" class="fa-regular fa-heart text-gray-700  hover:text-red-700"></i>
             </div>
-            <h1 class="font-bold text-[24px]">Fire Service Number</h1>
+            <h1 id="callname3" class="font-bold text-[24px]">Fire Service Number</h1>
             <p class=" text-[18px] text-gray-700">Fire Service</p>
 
 
-            <h1 class="font-bold text-[32px] mt-3">999</h1>
+            <h1 id="callnum3" class="font-bold text-[32px] mt-3">999</h1>
             <p class="bg-[#f2f2f2] rounded-full max-w-fit px-4 mb-5 py-1">Fire</p>
             <div class="flex gap-3">
                 <button class="roboto text-gray-500 rounded-lg min-h-[40px] w-full  border 2 border-gray-400 gap-3"><i
                         class="fa-regular fa-copy gap-3"></i> Copy</button>
-                <button class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
+                <button id="call-btn3" class="  roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
                         class="fa-solid fa-phone"></i>
                     Call</button>
             </div>
@@ -207,9 +207,9 @@
                     <h1 class="inter text-[18px] font-semibold">Fire Service Number <br><span
                             class="font-normal">999</span>
                     </h1>
-                    <div>
+                    <div id="current-time">
 
-                        <!-- time part -->
+
                     </div>
                 </div>
 
@@ -217,7 +217,7 @@
                     <h1 class="inter text-[18px] font-semibold">National Emergency <br> Number <br> <span
                             class="font-normal">1994-999999</span>
                     </h1>
-                    <div>
+                    <div id="current-time2">
                         <!-- time part -->
                     </div>
                 </div>
@@ -226,7 +226,7 @@
                     <h1 class="text-[18px] inter font-semibold"> Fire Service Number <br><span
                             class="font-normal">999</span>
                     </h1>
-                    <div>
+                    <div id="current-time3">
                         <!-- time part -->
                     </div>
                 </div>
@@ -234,7 +234,7 @@
                 <div class="mb-8  flex justify-between items-center">
                     <h1 class="text-[18px] inter font-semibold">Bangladesh Railway Helpline <br><span
                             class="font-normal">999</span></h1>
-                    <div>
+                    <div id="current-time4">
                         <!-- time part -->
                     </div>
                 </div>
@@ -243,7 +243,7 @@
                     <h1 class="text-[18px] inter font-semibold">Fire Service Number <br><span
                             class="font-normal">999</span>
                     </h1>
-                    <div>
+                    <div id="current-time5">
                         <!-- time part -->
                     </div>
                 </div>
@@ -252,7 +252,7 @@
                     <h1 class="text-[18px] inter font-semibold">Anti-Corruption Helpline <br><span
                             class="font-normal">999</span>
                     </h1>
-                    <div>
+                    <div id="current-time6">
                         <!-- time part -->
                     </div>
                 </div>
@@ -267,18 +267,18 @@
                 <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex justify-center items-center   ">
                     <img class="mx-auto items-center  h-[32px] w-[32px]" src="./logo/ambulance.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart text-gray-700"></i>
+                <i id="heartToClick4" class="fa-regular fa-heart text-gray-700  hover:text-red-700"></i>
             </div>
-            <h1 class="font-bold text-[24px]">Ambulance Service</h1>
+            <h1 id="callname4" class="font-bold text-[24px]">Ambulance Service</h1>
             <p class=" text-[18px] text-gray-700">Ambulance</p>
 
 
-            <h1 class="font-bold text-[32px] mt-3">1994-999999</h1>
+            <h1 id="callnum4" class="font-bold text-[32px] mt-3">1994-999999</h1>
             <p class="bg-[#f2f2f2] rounded-full max-w-fit mb-5 px-4 py-1">Health</p>
             <div class="flex gap-3">
                 <button class="roboto text-gray-500 rounded-lg min-h-[40px] w-full  border 2 border-gray-400 gap-3"><i
                         class="fa-regular fa-copy gap-3"></i> Copy</button>
-                <button class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
+                <button id="call-btn4" class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
                         class="fa-solid fa-phone"></i>
                     Call</button>
             </div>
@@ -295,18 +295,18 @@
                 <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex justify-center items-center   ">
                     <img class="mx-auto items-center  h-[32px] w-[32px]" src="./logo/emergency.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart text-gray-700"></i>
+                <i id="heartToClick5" class="fa-regular fa-heart text-gray-700  hover:text-red-700"></i>
             </div>
-            <h1 class="font-bold text-[24px]">Women & Child Helpline</h1>
+            <h1 id="callname5" class="font-bold text-[24px]">Women & Child Helpline</h1>
             <p class=" text-[18px] text-gray-700">Women & Child Helpline</p>
 
 
-            <h1 class="font-bold text-[32px] mt-3">109</h1>
+            <h1 id="callnum5" class="font-bold text-[32px] mt-3">109</h1>
             <p class="bg-[#f2f2f2] rounded-full max-w-fit mb-5 px-4 py-1">Help</p>
             <div class="flex gap-3">
                 <button class="roboto text-gray-500 rounded-lg min-h-[40px] w-full  border 2 border-gray-400 gap-3"><i
                         class="fa-regular fa-copy gap-3"></i> Copy</button>
-                <button class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
+                <button id="call-btn5" class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
                         class="fa-solid fa-phone"></i>
                     Call</button>
             </div>
@@ -323,18 +323,18 @@
                 <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex justify-center items-center   ">
                     <img class="mx-auto items-center  h-[32px] w-[32px]" src="./logo/emergency.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart text-gray-700"></i>
+                <i id="heartToClick6" class="fa-regular fa-heart text-gray-700  hover:text-red-700"></i>
             </div>
-            <h1 class="font-bold text-[24px]">Anti-Corruption Helpline</h1>
+            <h1 id="callname6" class="font-bold text-[24px]">Anti-Corruption Helpline</h1>
             <p class=" text-[18px] text-gray-700">Anti-Corruption</p>
 
 
-            <h1 class="font-bold text-[32px] mt-3">106</h1>
+            <h1 id="callnum6" class="font-bold text-[32px] mt-3">106</h1>
             <p class="bg-[#f2f2f2] rounded-full max-w-fit px-4 mb-5 py-1">Govt.</p>
             <div class="flex gap-3">
                 <button class="roboto text-gray-500 rounded-lg min-h-[40px] w-full  border 2 border-gray-400 gap-3"><i
                         class="fa-regular fa-copy gap-3"></i> Copy</button>
-                <button class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
+                <button id="call-btn6" class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
                         class="fa-solid fa-phone"></i>
                     Call</button>
             </div>
@@ -351,18 +351,18 @@
                 <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex justify-center items-center   ">
                     <img class="mx-auto items-center  h-[32px] w-[32px]" src="./logo/emergency.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart text-gray-700"></i>
+                <i id="heartToClick7" class="fa-regular fa-heart text-gray-700  hover:text-red-700"></i>
             </div>
-            <h1 class="font-bold text-[24px]">Electricity Helpline</h1>
+            <h1 id="callname7" class="font-bold text-[24px]">Electricity Helpline</h1>
             <p class=" text-[18px] text-gray-700">Electricity Outage</p>
 
 
-            <h1 class="font-bold text-[32px] mt-3">16216</h1>
+            <h1 id="callnum7" class="font-bold text-[32px] mt-3">16216</h1>
             <p class="bg-[#f2f2f2] rounded-full max-w-fit px-4  mb-5 py-1">Electricity</p>
             <div class="flex gap-3">
                 <button class="roboto text-gray-500 rounded-lg min-h-[40px] w-full  border 2 border-gray-400 gap-3"><i
                         class="fa-regular fa-copy gap-3"></i> Copy</button>
-                <button class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
+                <button id="call-btn7" class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
                         class="fa-solid fa-phone"></i>
                     Call</button>
             </div>
@@ -379,18 +379,18 @@
                 <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex justify-center items-center   ">
                     <img class="mx-auto items-center  h-[32px] w-[32px]" src="./logo/emergency.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart text-gray-700"></i>
+                <i id="heartToClick8" class="fa-regular fa-heart text-gray-700  hover:text-red-700"></i>
             </div>
-            <h1 class="font-bold text-[24px]">Brack Helpline</h1>
+            <h1 id="callname8" class="font-bold text-[24px]">Brack Helpline</h1>
             <p class=" text-[18px] text-gray-700">Brac</p>
 
 
-            <h1 class="font-bold text-[32px] mt-3">16445</h1>
+            <h1 id="callnum8" class="font-bold text-[32px] mt-3">16445</h1>
             <p class="bg-[#f2f2f2] rounded-full max-w-fit px-4 mb-5 py-1">NGO</p>
             <div class="flex gap-3">
                 <button class="roboto text-gray-500 rounded-lg min-h-[40px] w-full  border 2 border-gray-400 gap-3"><i
                         class="fa-regular fa-copy gap-3"></i> Copy</button>
-                <button class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
+                <button id="call-btn8" class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
                         class="fa-solid fa-phone"></i>
                     Call</button>
             </div>
@@ -407,18 +407,18 @@
                 <div class="bg-[#FFE3E2] rounded-2xl h-[60px] w-[60px] flex justify-center items-center   ">
                     <img class="mx-auto items-center  h-[32px] w-[32px]" src="./logo/emergency.png" alt="">
                 </div>
-                <i class="fa-regular fa-heart text-gray-700"></i>
+                <i id="heartToClick9" class="fa-regular fa-heart text-gray-700 hover:text-red-700"></i>
             </div>
-            <h1 class="font-bold text-[24px]">Bangladesh Railway Helpline</h1>
+            <h1 id="callname9" class="font-bold text-[24px]">Bangladesh Railway Helpline</h1>
             <p class=" text-[18px] text-gray-700">Bangladesh Railway</p>
 
 
-            <h1 class="font-bold text-[32px] mt-3">163</h1>
+            <h1 id="callnum9" class="font-bold text-[32px] mt-3">163</h1>
             <p class="bg-[#f2f2f2] rounded-full max-w-fit px-4 mb-5 py-1">Travel</p>
             <div class="flex gap-3">
                 <button class="roboto text-gray-500 rounded-lg min-h-[40px] w-full  border 2 border-gray-400 gap-3"><i
                         class="fa-regular fa-copy gap-3"></i> Copy</button>
-                <button class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
+                <button id="call-btn9" class="roboto  rounded-lg text-white bg-[#00a63e] min-h-[40px] w-full gap-3"><i
                         class="fa-solid fa-phone"></i>
                     Call</button>
             </div>
