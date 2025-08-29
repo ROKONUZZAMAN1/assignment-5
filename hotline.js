@@ -11,7 +11,6 @@ console.log(count);
 const heartvalue = document.getElementById('heartCount')
 
 
-
 function increase(value) {
 
     document.getElementById(value).addEventListener('click', function () {
@@ -34,6 +33,32 @@ increase('heartToClick9')
 
 
 
+
+// copy button
+
+
+let copy = parseInt(document.getElementById('copycount').innerText)
+console.log(copy)
+const copyvalue = document.getElementById('copycount')
+function increase2(value1) {
+
+    document.getElementById(value1).addEventListener('click', function () {
+        // console.log('click is working');
+        copy++
+        console.log(copy);
+        copyvalue.innerText = copy
+    })
+    return value1
+}
+increase2('copyToClick')
+increase2('copyToClick2')
+increase2('copyToClick3')
+increase2('copyToClick4')
+increase2('copyToClick5')
+increase2('copyToClick6')
+increase2('copyToClick7')
+increase2('copyToClick8')
+increase2('copyToClick9')
 
 
 
