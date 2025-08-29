@@ -4,6 +4,8 @@
 
 // const { createElement } = require("react");
 
+// const { createElement } = require("react");
+
 let count = parseInt(document.getElementById('heartCount').innerText)
 console.log(count);
 const heartvalue = document.getElementById('heartCount')
@@ -31,6 +33,14 @@ increase('heartToClick8')
 increase('heartToClick9')
 
 
+
+
+
+
+
+
+
+
 // ### 5. Call Buttons
 
 function showName(name1) {
@@ -44,13 +54,11 @@ function showNumber(num) {
 // time setup
 
 const Time = new Date().toLocaleTimeString();
-console.log(Time)
+// console.log(Time)
 
 function timePrint(timevalue) {
     document.getElementById(timevalue).innerText = Time
 }
-
-
 
 
 
@@ -61,14 +69,27 @@ let loseCoin = document.getElementById('coin')
 
 function DoCall(emergency) {
 
-    document.getElementById(emergency).addEventListener('click', function () {
-
+    document.getElementById(emergency).addEventListener('click', function (event) {
+        event.preventDefault()
 
         if (emergency === 'call-btn' && minus >= 20) {
             alert(showName('callname') + ' '
                 + showNumber('callnum') + '  Calling' + '...')
             minus = minus - 20
             loseCoin.innerText = minus
+            if (emergency === 'call-btn') {
+                const historyText = document.getElementById('History').innerText;
+
+                const newEntry = document.createElement('div');
+                newEntry.innerText = historyText;
+
+                const historyPushSection = document.getElementById('headHistory');
+                historyPushSection.appendChild(newEntry);
+
+                historyPushSection.style.display = 'block';
+
+            }
+
 
 
         }
@@ -77,48 +98,164 @@ function DoCall(emergency) {
                 + showNumber('callnum2') + '  Calling ' + '...')
             minus = minus - 20
             loseCoin.innerText = minus
+
+            if (emergency === 'call-btn2') {
+                const historyText = document.getElementById('History2').innerText;
+
+                const newEntry = document.createElement('div');
+                newEntry.innerText = historyText;
+
+                const historyPushSection = document.getElementById('headHistory');
+                historyPushSection.appendChild(newEntry);
+
+                historyPushSection.style.display = 'block';
+
+            }
+
         }
         else if (emergency === 'call-btn3' && minus >= 20) {
             alert(showName('callname3') + ' '
                 + showNumber('callnum3') + '  Calling' + '...')
             minus = minus - 20
             loseCoin.innerText = minus
+
+
+
+            if (emergency === 'call-btn3') {
+                const historyText = document.getElementById('History3').innerText;
+
+                const newEntry = document.createElement('div');
+                newEntry.innerText = historyText;
+
+                const historyPushSection = document.getElementById('headHistory');
+                historyPushSection.appendChild(newEntry);
+
+                historyPushSection.style.display = 'block';
+
+            }
+
+
+
         }
         else if (emergency === 'call-btn4' && minus >= 20) {
             alert(showName('callname4') + ' '
                 + showNumber('callnum4') + '  Calling' + '...')
             minus = minus - 20
             loseCoin.innerText = minus
+
+            if (emergency === 'call-btn4') {
+                const historyText = document.getElementById('History4').innerText;
+
+                const newEntry = document.createElement('div');
+                newEntry.innerText = historyText;
+
+                const historyPushSection = document.getElementById('headHistory');
+                historyPushSection.appendChild(newEntry);
+
+                historyPushSection.style.display = 'block';
+
+            }
+
         }
         else if (emergency === 'call-btn5' && minus >= 20) {
             alert(showName('callname5') + ' '
                 + showNumber('callnum5') + '  Calling ' + '...')
             minus = minus - 20
             loseCoin.innerText = minus
+
+            if (emergency === 'call-btn5') {
+                const historyText = document.getElementById('History5').innerText;
+
+                const newEntry = document.createElement('div');
+                newEntry.innerText = historyText;
+
+                const historyPushSection = document.getElementById('headHistory');
+                historyPushSection.appendChild(newEntry);
+
+                historyPushSection.style.display = 'block';
+
+            }
+
         }
         else if (emergency === 'call-btn6' && minus >= 20) {
             alert(showName('callname6') + ' '
                 + showNumber('callnum6') + 'is Calling' + '...')
             minus = minus - 20
             loseCoin.innerText = minus
+
+
+            if (emergency === 'call-btn6') {
+                const historyText = document.getElementById('History6').innerText;
+
+                const newEntry = document.createElement('div');
+                newEntry.innerText = historyText;
+
+                const historyPushSection = document.getElementById('headHistory');
+                historyPushSection.appendChild(newEntry);
+
+                historyPushSection.style.display = 'block';
+
+            }
         }
         else if (emergency === 'call-btn7' && minus >= 20) {
             alert(showName('callname7') + ' '
                 + showNumber('callnum7') + '  Calling' + '...')
             minus = minus - 20
             loseCoin.innerText = minus
+            if (emergency === 'call-btn7') {
+                const historyText = document.getElementById('History7').innerText;
+
+                const newEntry = document.createElement('div');
+                newEntry.innerText = historyText;
+
+                const historyPushSection = document.getElementById('headHistory');
+                historyPushSection.appendChild(newEntry);
+
+                historyPushSection.style.display = 'block';
+
+            }
+
+
         }
         else if (emergency === 'call-btn8' && minus >= 20) {
             alert(showName('callname8') + ' '
                 + showNumber('callnum8') + '  Calling' + '...')
             minus = minus - 20
             loseCoin.innerText = minus
+
+            if (emergency === 'call-btn8') {
+                const historyText = document.getElementById('History8').innerText;
+
+                const newEntry = document.createElement('div');
+                newEntry.innerText = historyText;
+
+                const historyPushSection = document.getElementById('headHistory');
+                historyPushSection.appendChild(newEntry);
+
+                historyPushSection.style.display = 'block';
+
+            }
+
         }
         else if (emergency === 'call-btn9' && minus >= 20) {
             alert(showName('callname9') + ' '
                 + showNumber('callnum9') + '  Calling' + '...')
             minus = minus - 20
             loseCoin.innerText = minus
+            if (emergency === 'call-btn9') {
+                const historyText = document.getElementById('History9').innerText;
+
+                const newEntry = document.createElement('div');
+                newEntry.innerText = historyText;
+
+                const historyPushSection = document.getElementById('headHistory');
+                historyPushSection.appendChild(newEntry);
+
+                historyPushSection.style.display = 'block';
+
+            }
+
+
         }
         else {
             return alert('You have no sufficient coin.You need 20 coin')
@@ -173,4 +310,7 @@ timePrint('current-time6')
 timePrint('current-time7')
 timePrint('current-time8')
 timePrint('current-time9')
+
+
+
 

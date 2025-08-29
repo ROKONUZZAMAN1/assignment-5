@@ -42,8 +42,6 @@
     </style>
 
 
-
-
 </head>
 
 <body>
@@ -190,40 +188,40 @@
 
 
         </div>
-        <div class="border-2 border-red-600  grid row-span-3 hidden md:block p-9 bg-white rounded-xl  ">
+        <div class="  grid row-span-3 hidden md:block p-9 bg-white rounded-xl  ">
 
 
             <div class="flex justify-between items-center">
                 <h1 class="inter text-[22px] font-semibold"><i class="fa-regular fa-clock"></i> Call History</h1>
                 <div>
-                    <button
+                    <button id="clear-btn"
                         class="roboto  rounded-full text-white bg-[#00a63e] min-h-[40px] mx-5 w-full gap-3 p-4 text-[20px]">
                         Clear</button>
                 </div>
             </div>
-            <div class="mt-10">
+            <div id="headHistory" class="mt-10">
 
-                <div class="mb-8  flex justify-between items-center">
-                    <h1 class="inter text-[18px] font-semibold">Fire Service Number <br><span
+                <div id="History" class="mb-8  flex justify-between items-center hidden">
+                    <h1 class="inter text-[18px] font-semibold">National Emergency Number <br><span
                             class="font-normal">999</span>
                     </h1>
-                    <div id="current-time">
-
+                    <div>
+                        <p id="current-time"></p>
 
                     </div>
                 </div>
-
-                <div class="mb-8  flex justify-between items-center">
-                    <h1 class="inter text-[18px] font-semibold">National Emergency <br> Number <br> <span
-                            class="font-normal">1994-999999</span>
+                <div id="History2" class="mb-8  flex justify-between items-center hidden ">
+                    <h1 class="inter text-[18px] font-semibold">Police Helpline Number <br><span
+                            class="font-normal">999</span>
                     </h1>
-                    <div id="current-time2">
-                        <!-- time part -->
+                    <div>
+                        <p id="current-time2"></p>
+
                     </div>
                 </div>
 
-                <div class="mb-8  flex justify-between items-center">
-                    <h1 class="text-[18px] inter font-semibold"> Fire Service Number <br><span
+                <div id="History3" class="mb-8  flex justify-between items-center hidden">
+                    <h1 class="inter text-[18px] font-semibold">Fire Service Number<br> Number <br> <span
                             class="font-normal">999</span>
                     </h1>
                     <div id="current-time3">
@@ -231,28 +229,54 @@
                     </div>
                 </div>
 
-                <div class="mb-8  flex justify-between items-center">
-                    <h1 class="text-[18px] inter font-semibold">Bangladesh Railway Helpline <br><span
-                            class="font-normal">999</span></h1>
+                <div id="History4" class="mb-8  flex justify-between items-center hidden">
+                    <h1 class="text-[18px] inter font-semibold">Ambulance Service <br><span
+                            class="font-normal">1994-999999</span>
+                    </h1>
                     <div id="current-time4">
                         <!-- time part -->
                     </div>
                 </div>
 
-                <div class="mb-8  flex justify-between items-center">
-                    <h1 class="text-[18px] inter font-semibold">Fire Service Number <br><span
-                            class="font-normal">999</span>
-                    </h1>
+                <div id="History5" class="mb-8  flex justify-between items-center hidden">
+                    <h1 class="text-[18px] inter font-semibold">Women & Child Helpline<br><span
+                            class="font-normal">109</span></h1>
                     <div id="current-time5">
                         <!-- time part -->
                     </div>
                 </div>
 
-                <div class="mb-8 flex justify-between items-center">
-                    <h1 class="text-[18px] inter font-semibold">Anti-Corruption Helpline <br><span
-                            class="font-normal">999</span>
+                <div id="History6" class="mb-8  flex justify-between items-center hidden">
+                    <h1 class="text-[18px] inter font-semibold">Anti-Corruption Helpline<br><span
+                            class="font-normal">106</span>
                     </h1>
                     <div id="current-time6">
+                        <!-- time part -->
+                    </div>
+                </div>
+
+                <div id="History7" class="mb-8 flex justify-between items-center hidden">
+                    <h1 class="text-[18px] inter font-semibold">Electricity Helpline<br><span
+                            class="font-normal">16216</span>
+                    </h1>
+                    <div id="current-time7">
+                        <!-- time part -->
+                    </div>
+                </div>
+
+                <div id="History8" class="mb-8 flex justify-between items-center hidden">
+                    <h1 class="text-[18px] inter font-semibold">Brack Helpline<br><span class="font-normal">16445</span>
+                    </h1>
+                    <div id="current-time8">
+                        <!-- time part -->
+                    </div>
+                </div>
+
+                <div id="History9" class="mb-8 flex justify-between items-center hidden">
+                    <h1 class="text-[18px] inter font-semibold">Bangladesh Railway Helpline<br><span
+                            class="font-normal">163</span>
+                    </h1>
+                    <div id="current-time9">
                         <!-- time part -->
                     </div>
                 </div>
@@ -430,29 +454,27 @@
 
         <!--  responsive part -->
 
-        <!-- border-2 border-red-600 grid row-span-3 block md:hidden -->
 
-
-        <div class="border-2 border-red-600  grid row-span-3 block md:hidden  p-9 bg-white rounded-xl  ">
+        <div class="  grid row-span-3 block md:hidden  p-9 bg-white rounded-xl  ">
 
 
             <div class="flex justify-between items-center">
                 <h1 class="inter text-[22px] font-semibold"><i class="fa-regular fa-clock"></i> Call History</h1>
                 <div>
-                    <button
+                    <button id="clear-btn"
                         class="roboto  rounded-full text-white bg-[#00a63e] min-h-[40px] mx-5 w-full gap-3 p-4 text-[20px]">
                         Clear</button>
                 </div>
             </div>
-            <div class="mt-10">
+            <div id="headHistory" class="mt-10">
 
-                <div class="mb-8  flex justify-between items-center">
+                <div id="History3" class="mb-8  flex justify-between items-center ">
                     <h1 class="inter text-[18px] font-semibold">Fire Service Number <br><span
                             class="font-normal">999</span>
                     </h1>
                     <div>
+                        <p id="current-time"></p>
 
-                        <!-- time part -->
                     </div>
                 </div>
 
@@ -460,7 +482,7 @@
                     <h1 class="inter text-[18px] font-semibold">National Emergency <br> Number <br> <span
                             class="font-normal">1994-999999</span>
                     </h1>
-                    <div>
+                    <div id="current-time2">
                         <!-- time part -->
                     </div>
                 </div>
@@ -469,7 +491,7 @@
                     <h1 class="text-[18px] inter font-semibold"> Fire Service Number <br><span
                             class="font-normal">999</span>
                     </h1>
-                    <div>
+                    <div id="current-time3">
                         <!-- time part -->
                     </div>
                 </div>
@@ -477,7 +499,7 @@
                 <div class="mb-8  flex justify-between items-center">
                     <h1 class="text-[18px] inter font-semibold">Bangladesh Railway Helpline <br><span
                             class="font-normal">999</span></h1>
-                    <div>
+                    <div id="current-time4">
                         <!-- time part -->
                     </div>
                 </div>
@@ -486,7 +508,7 @@
                     <h1 class="text-[18px] inter font-semibold">Fire Service Number <br><span
                             class="font-normal">999</span>
                     </h1>
-                    <div>
+                    <div id="current-time5">
                         <!-- time part -->
                     </div>
                 </div>
@@ -495,12 +517,15 @@
                     <h1 class="text-[18px] inter font-semibold">Anti-Corruption Helpline <br><span
                             class="font-normal">999</span>
                     </h1>
-                    <div>
+                    <div id="current-time6">
                         <!-- time part -->
                     </div>
                 </div>
             </div>
         </div>
+
+
+
 
     </div>
 
@@ -508,6 +533,7 @@
 
 
     <script src="./hotline.js"></script>
+    <script src="./emergency.js"></script>
 </body>
 
 </html>
